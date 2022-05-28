@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.29.4/docxtemplater.js"></script>
+    <script src="https://unpkg.com/pizzip@3.1.1/dist/pizzip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://unpkg.com/pizzip@3.1.1/dist/pizzip-utils.js"></script>
+    <script type="module" src="/script.js" defer></script>
+    <title>DOCx Creator</title>
+  </head>
+  <body>
+    <main>
+        <div class="form-container">
+            <form>
+                <h1>Генератор інвойсів</h1>
+                <div class="alert" id="alert-div"> </div>
+                <label for="invoice-template">Завантажити шаблон інвойсу</label>
+                <input type="file" id="template" title="invoice-template" required/>
+                <label for="amount">Сума інвойсу</label>
+                <input type="number" id = "amount" title="amount" placeholder="100000" max="999999999999999" required/>
+                <label for="invoice_number">Номер інвойсу</label>
+                <input type="text" id = "invoice_number" title="invoice_number" placeholder="NVLS69" required/>
+                <label for="date">Дата інвойсу</label>
+                <input type="date" id="date" title="date" required/>
+                <label for="currency">Валюта</label>
+                <select id="currency" title="currency" name="currency" />
+                    <option value="Dollar">Доллар</option>
+                    <option value="Euro">Євро</option>
+                    <option value="Hryvna">Гривня</option>
+                </select>
+                <div class="btn">
+                    <button id="button" type="submit">Згенерувати</button>
+                </div>
+                <div class="instructions">Як це працює?</div>
+            </form>
+      </div>
+    </main>
+  </body>
+</html>

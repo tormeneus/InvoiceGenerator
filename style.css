@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+main {
+  background: #3a1c71; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffaf7b,
+    #d76d77,
+    #3a1c71
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffaf7b, #d76d77, #3a1c71);
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  display: relative;
+  width: 30%;
+  height: 50 vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255, 0.95);
+  padding: 3rem;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+input {
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
+}
+
+select {
+  font-size: 1rem;
+  color: rgb(108, 108, 108);
+}
+
+label {
+  padding: 0.5rem 0;
+  color: rgb(108, 108, 108);
+  padding-left: 5px;
+}
+
+button {
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 1rem;
+  font-weight: bold;
+  border-color: rgb(196, 196, 196);
+}
+
+::placeholder {
+  color: rgb(196, 196, 196);
+  font-size: 0.8rem;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.alert {
+  min-height: 1.2rem;
+  text-align: center;
+  vertical-align: bottom;
+  color: #d76d77;
+  font-weight: 700;
+}
+
+.instructions {
+  color: rgb(108, 108, 108);
+  font-size: 0.7rem;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
